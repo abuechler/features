@@ -2,7 +2,7 @@
 
 Certain operations like `postCreateCommand` run non-interactive, non-login shells. Unfortunately, `nvm` is really particular that it needs to be "sourced" before it is used, which can only happen automatically with interactive and/or login shells. Fortunately, this is easy to work around:
 
-Just can source the `nvm` startup script before using it:
+Just source the `nvm` startup script before using it:
 
 ```json
 "postCreateCommand": ". ${NVM_DIR}/nvm.sh && nvm install --lts"
